@@ -39,15 +39,14 @@ def main():
 				print(bcolors.FAIL+"[!] "+bcolors.RESET+"No JavaScript comment found for "+bcolors.INFO+line.strip()+bcolors.RESET)
 			else:
 				print(bcolors.INFO+"[*] "+bcolors.RESET+"JavaScript comments found for "+bcolors.INFO+line.strip()+bcolors.RESET)
-				print(comments_js)
 				for comment in comments_js:
 					print(bcolors.OK+"[+] "+bcolors.RESET+comment.group().strip())
 
 		except KeyboardInterrupt:
 			print(bcolors.FAIL+"[!] "+bcolors.RESET+"Script canceled.")
 			sys.exit(1)
-#		except:
-#			pass
+		except:
+			pass
 try:
 	main()
 except Exception as e:
