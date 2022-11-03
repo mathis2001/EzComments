@@ -23,4 +23,4 @@ $ python3 webhackurls.py -d target.com | python3 ezcomments.py
 
 ## ToDo:
 
-Find a way to reduce false positive (exp: js comment regex match href=<b>//exemple.com</b>)
+Find a way to reduce false positive (regex match href=<b>//exemple.com</b> as a js comment for exemple)
