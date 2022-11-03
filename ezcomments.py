@@ -11,7 +11,7 @@ class bcolors:
 
 def main():
 	regex_html = r"<!--(.*?)-->"
-	regex_js = r"\/\*[\s\S]*?\*\/|([^:]|^)\/\/.*$"
+	regex_js = r"\/\*[\s\S]*?\*\/|([^:^=^']|^)\/\/.*$"
 
 	for line in sys.stdin:
 		try:
